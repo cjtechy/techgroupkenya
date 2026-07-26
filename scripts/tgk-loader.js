@@ -6,12 +6,12 @@
     if (!loader || loader.dataset.dismissed === '1') return;
     loader.dataset.dismissed = '1';
     setTimeout(function () {
-      loader.style.transition = 'opacity 1s ease-out';
+      loader.style.transition = 'opacity 0.6s ease-out';
       loader.style.opacity = '0';
       setTimeout(function () {
         loader.style.display = 'none';
-      }, 1000);
-    }, 2000);
+      }, 600);
+    }, 1200);
   }
 
   if (document.readyState === 'complete') {

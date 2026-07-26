@@ -25,7 +25,7 @@ techgroupkenya/
 ├── contact.html            # Redirect → /#contact
 ├── services.html           # Redirect → /#features
 ├── donate.html             # Redirect → /#donate
-├── careers.html            # Redirect → skillme.techgroupkenya.co.ke/jobs
+├── careers.html            # Redirect → app.techgroupkenya.co.ke/jobs
 ├── terms-of-service.html   # Terms of service
 ├── 404.html                # Custom not-found page
 ├── assets/
@@ -80,7 +80,7 @@ After deploying, verify:
 |----------|-----|
 | Community | [community.techgroupkenya.co.ke](https://community.techgroupkenya.co.ke) |
 | Blog | [blog.techgroupkenya.co.ke](https://blog.techgroupkenya.co.ke) |
-| Skill Me (courses & jobs) | [skillme.techgroupkenya.co.ke](https://skillme.techgroupkenya.co.ke) |
+| Skill Me (courses & jobs) | [app.techgroupkenya.co.ke](https://app.techgroupkenya.co.ke) |
 | Tech Events | [events.techgroupkenya.co.ke](https://events.techgroupkenya.co.ke) |
 | CDN | [cdn.techgroupkenya.co.ke](https://cdn.techgroupkenya.co.ke) |
 
