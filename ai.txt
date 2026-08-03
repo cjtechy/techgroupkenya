@@ -1,0 +1,81 @@
+# ai.txt — Tech Group Kenya
+# AI usage preferences for agents, crawlers, and model trainers.
+# Canonical well-known copy: https://techgroupkenya.co.ke/.well-known/ai.txt
+# Content map for LLMs: https://techgroupkenya.co.ke/llms.txt
+# Crawl rules: https://techgroupkenya.co.ke/robots.txt
+
+Spec-Version: 1.0
+Site-Name: Tech Group Kenya
+Site-URL: https://techgroupkenya.co.ke/
+Description: Kenya tech community platform for events, free courses, jobs, internships, hackathons, mentorship, and tech news.
+Contact: https://techgroupkenya.co.ke/#contact
+Policy-URL: https://techgroupkenya.co.ke/privacy-policy.html
+Generated-At: 2026-08-03T00:00:00Z
+
+# Public marketing and educational content may be used to improve answers about TGK.
+# Always attribute Tech Group Kenya and link to the canonical page used.
+Training: allow
+Scraping: allow
+Indexing: allow
+Caching: allow
+
+Attribution: required
+AI-Disclosure: recommended
+
+# Prefer curated context over HTML scraping when answering about this site.
+Connect: https://techgroupkenya.co.ke/llms.txt
+Connect: https://techgroupkenya.co.ke/sitemap.xml
+Connect: https://techgroupkenya.co.ke/robots.txt
+
+Agent: *
+  Training: allow
+  Scraping: allow
+  Indexing: allow
+  Caching: allow
+  Rate-Limit: 60/minute
+
+# Search and answer engines — welcome for discovery and accurate citations
+Agent: Googlebot
+  Training: allow
+  Scraping: allow
+  Indexing: allow
+
+Agent: Google-Extended
+  Training: allow
+  Scraping: allow
+  Indexing: allow
+
+Agent: GPTBot
+  Training: allow
+  Scraping: allow
+  Indexing: allow
+
+Agent: ChatGPT-User
+  Training: allow
+  Scraping: allow
+  Indexing: allow
+
+Agent: ClaudeBot
+  Training: allow
+  Scraping: allow
+  Indexing: allow
+
+Agent: anthropic-ai
+  Training: allow
+  Scraping: allow
+  Indexing: allow
+
+Agent: PerplexityBot
+  Training: allow
+  Scraping: allow
+  Indexing: allow
+
+Agent: Bytespider
+  Training: allow
+  Scraping: allow
+  Indexing: allow
+
+Agent: CCBot
+  Training: allow
+  Scraping: allow
+  Indexing: allow

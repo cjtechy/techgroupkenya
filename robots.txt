@@ -3,6 +3,11 @@ Allow: /
 
 Sitemap: https://techgroupkenya.co.ke/sitemap.xml
 
+# AI discovery & policy (complementary to this file — not crawl blockers):
+# llms.txt  — curated map of important pages for AI assistants
+# ai.txt    — AI training / scraping / indexing / attribution preferences
+# Also published at: /.well-known/ai.txt
+
 # Pages not in the sitemap use <meta name="robots" content="noindex, follow">:
-# terms-of-service.html, privacy-policy.html, 404.html, and redirect stubs
-# (about, contact, careers, donate, services). No Disallow needed.
+# terms-of-service.html, privacy-policy.html, cookie-policy.html, 404.html,
+# and redirect stubs (about, contact, careers, donate, services). No Disallow needed.
