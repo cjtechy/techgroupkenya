@@ -8,6 +8,9 @@ Sitemap: https://techgroupkenya.co.ke/sitemap.xml
 # ai.txt    — AI training / scraping / indexing / attribution preferences
 # Also published at: /.well-known/ai.txt
 
+# Preferred homepage URL is / (HTTP 301 from /index.html via _redirects).
+# App/events/blog live on their own hostnames and should self-canonicalize there.
+#
 # Pages not in the sitemap use <meta name="robots" content="noindex, follow">:
-# terms-of-service.html, privacy-policy.html, cookie-policy.html, 404.html,
+# terms-of-service.html, cookie-policy.html, 404.html,
 # and redirect stubs (about, contact, careers, donate, services). No Disallow needed.

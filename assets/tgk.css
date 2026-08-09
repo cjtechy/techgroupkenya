@@ -966,6 +966,23 @@ nav.scrolled{background:rgba(15,19,25,.95);backdrop-filter:blur(20px);border-col
   background:var(--bg2);
   border-top:1px solid var(--border);
 }
+.tgk-developers-section{
+  background:var(--bg);
+}
+.tgk-beta-badge{
+  display:inline-block;
+  margin-left:10px;
+  padding:3px 10px;
+  border-radius:6px;
+  vertical-align:middle;
+  font-family:var(--font-sans);
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:#0A1A2C;
+  background:var(--sky);
+}
 .security-inner{
   display:grid;
   grid-template-columns:1fr 1fr;

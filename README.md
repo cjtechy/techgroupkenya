@@ -44,7 +44,8 @@ techgroupkenya/
 ├── robots.txt
 ├── ads.txt
 ├── CNAME                   # Custom domain (techgroupkenya.co.ke)
-└── _headers                # HTTP security headers
+├── _headers                # HTTP security headers
+└── _redirects              # 301s (/index.html → /, legacy stubs)
 ```
 
 ## Local development
@@ -68,19 +69,52 @@ Then open [http://localhost:8080](http://localhost:8080).
 
 The site is deployed as static files. The `CNAME` file points the custom domain to `techgroupkenya.co.ke`. Push to the configured hosting branch (e.g. GitHub Pages or Cloudflare Pages) to publish.
 
+`_redirects` (Cloudflare Pages) issues HTTP 301s so preferred URLs win over soft redirects:
+
+- `/index.html` → `/`
+- Legacy stubs (`/about.html`, etc.) → homepage anchors
+- `/careers.html` → `https://app.techgroupkenya.co.ke/jobs/`
+
 After deploying, verify:
 
 - [https://techgroupkenya.co.ke/sitemap.xml](https://techgroupkenya.co.ke/sitemap.xml)
+- `https://techgroupkenya.co.ke/index.html` returns **301** to `/`
 - Contact form submission
 - Redirect stubs (`/about.html`, `/contact.html`, etc.)
+
+## URL & canonical strategy
+
+Preferred host layout (each property self-canonicalizes on its own hostname):
+
+```
+techgroupkenya.co.ke
+        │
+        ├── /                              ← main TGK (this repo)
+        │
+        ├── app.techgroupkenya.co.ke
+        │       └── /jobs/...              ← Tech Hub
+        │
+        ├── events.techgroupkenya.co.ke
+        │       └── /events/...            ← Tech Events
+        │
+        └── blog.techgroupkenya.co.ke
+                └── /...                   ← Tech Blog
+```
+
+Rules for this site:
+
+- Canonical homepage is `https://techgroupkenya.co.ke/` (not `/index.html`)
+- Internal links and the sitemap use `/`, not `/index.html`
+- Do **not** set app, events, or blog pages to canonicalize to the apex domain (or vice versa). Cross-link only; each host owns its own canonicals
+- The careers stub may point users (and its stub canonical) at `app.` because that is where jobs live
 
 ## Related properties
 
 | Property | URL |
 |----------|-----|
 | Community | [community.techgroupkenya.co.ke](https://community.techgroupkenya.co.ke) |
-| Blog | [blog.techgroupkenya.co.ke](https://blog.techgroupkenya.co.ke) |
-| Skill Me (courses & jobs) | [app.techgroupkenya.co.ke](https://app.techgroupkenya.co.ke) |
+| Tech Blog | [blog.techgroupkenya.co.ke](https://blog.techgroupkenya.co.ke) |
+| Tech Hub (courses & jobs) | [app.techgroupkenya.co.ke](https://app.techgroupkenya.co.ke) |
 | Tech Events | [events.techgroupkenya.co.ke](https://events.techgroupkenya.co.ke) |
 | CDN | [cdn.techgroupkenya.co.ke](https://cdn.techgroupkenya.co.ke) |
 

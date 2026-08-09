@@ -1,0 +1,11 @@
+# Preferred URL: / (not /index.html)
+/index.html  /  301
+
+# Legacy section stubs → homepage anchors
+/about.html     /#about     301
+/contact.html   /#contact   301
+/services.html  /#features  301
+/donate.html    /#donate    301
+
+# Careers lives on Tech Hub (self-canonical host: app.)
+/careers.html   https://app.techgroupkenya.co.ke/jobs/  301

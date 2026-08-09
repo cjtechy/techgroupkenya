@@ -234,7 +234,7 @@ if(sparklineEl){
 const stickyCards=document.querySelectorAll('.sticky-card');
 const panelViews=document.querySelectorAll('.panel-view');
 const panelLabel=document.getElementById('panelLabel');
-const panelLabels=['Tech Blog','Skill Me','Tech Events'];
+const panelLabels=['Tech Blog','Tech Hub','Tech Events'];
 stickyCards.forEach((card,i)=>{
   card.addEventListener('click',(e)=>{
     if(e.target.closest('.sticky-card-cta'))return;
@@ -338,7 +338,7 @@ function toggleAllFaq(){
 
 const testimonials=[
   {q:'Tech Group Kenya has been instrumental in my career growth. The community events and networking opportunities helped me land my dream job in software development.',name:'James M.',role:'Software Developer',init:'JM'},
-  {q:'The tech blog and resources provided by Tech Group Kenya have been invaluable for staying updated with the latest trends and technologies in Kenya\'s tech scene.',name:'Grace W.',role:'Tech Entrepreneur',init:'GW'},
+  {q:'Tech Blog and resources provided by Tech Group Kenya have been invaluable for staying updated with the latest trends and technologies in Kenya\'s tech scene.',name:'Grace W.',role:'Tech Entrepreneur',init:'GW'},
   {q:'As a student, Tech Group Kenya opened doors to internships and mentorship programs that shaped my career path. The community is truly supportive and innovative.',name:'David O.',role:'Computer Science Student',init:'DO'},
   {q:'Tech Group Kenya is more than a community â€” it\'s a movement. The events and collaborations have helped our startup connect with investors and talented developers.',name:'Sarah N.',role:'Startup Founder',init:'SN'},
 ];
@@ -594,7 +594,7 @@ if(phoneFrame){
     img.style.opacity='0';
     window.setTimeout(()=>{
       img.src=sources[next];
-      img.alt='TGK Hub app preview';
+      img.alt='Tech Hub app preview';
       img.style.opacity='1';
       current=next;
       preload(sources[(current+1)%sources.length]);
