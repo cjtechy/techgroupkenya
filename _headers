@@ -4,3 +4,29 @@
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# Prefer / over /index.html (fragments like /index.html#about are not separate pages)
+/index.html
+  X-Robots-Tag: noindex, follow
+
+# Legacy redirect stubs — keep out of the index
+/about.html
+  X-Robots-Tag: noindex, follow
+/contact.html
+  X-Robots-Tag: noindex, follow
+/services.html
+  X-Robots-Tag: noindex, follow
+/donate.html
+  X-Robots-Tag: noindex, follow
+/careers.html
+  X-Robots-Tag: noindex, follow
+
+# Legal / error pages
+/privacy-policy.html
+  X-Robots-Tag: noindex, follow
+/terms-of-service.html
+  X-Robots-Tag: noindex, follow
+/cookie-policy.html
+  X-Robots-Tag: noindex, follow
+/404.html
+  X-Robots-Tag: noindex, follow
