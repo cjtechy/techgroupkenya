@@ -336,20 +336,6 @@ function toggleAllFaq(){
     :'<line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>';
 }
 
-const testimonials=[
-  {q:'Tech Group Kenya has been instrumental in my career growth. The community events and networking opportunities helped me land my dream job in software development.',name:'James M.',role:'Software Developer',init:'JM'},
-  {q:'Tech Blog and resources provided by Tech Group Kenya have been invaluable for staying updated with the latest trends and technologies in Kenya\'s tech scene.',name:'Grace W.',role:'Tech Entrepreneur',init:'GW'},
-  {q:'As a student, Tech Group Kenya opened doors to internships and mentorship programs that shaped my career path. The community is truly supportive and innovative.',name:'David O.',role:'Computer Science Student',init:'DO'},
-  {q:'Tech Group Kenya is more than a community â€” it\'s a movement. The events and collaborations have helped our startup connect with investors and talented developers.',name:'Sarah N.',role:'Startup Founder',init:'SN'},
-];
-const tt=document.getElementById('testiTrack');
-testimonials.forEach(t=>{
-  const el=document.createElement('div');
-  el.className='testi-card';
-  el.innerHTML=`<div class="testi-stars">${[...Array(5)].map(()=>'<svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>').join('')}</div><p class="testi-quote">"${t.q}"</p><div class="testi-author"><div class="testi-avatar">${t.init}</div><div><div class="testi-name">${t.name}</div><div class="testi-role">${t.role}</div></div></div>`;
-  tt.appendChild(el);
-});
-
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener('click',e=>{
     const href=a.getAttribute('href');

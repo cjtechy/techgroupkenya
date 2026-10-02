@@ -7,7 +7,7 @@
 Spec-Version: 1.0
 Site-Name: Tech Group Kenya
 Site-URL: https://techgroupkenya.co.ke/
-Description: Kenya tech community platform for events, free courses, jobs, internships, hackathons, mentorship, and tech news.
+Description: Discover Opportunities, Updates, Events, Growth, Resources, offers, internships, jobs, hackathons, mentorship, networking, scholarships, and the latest tech news across Kenya and the world.
 Contact: https://techgroupkenya.co.ke/#contact
 Policy-URL: https://techgroupkenya.co.ke/privacy-policy.html
 Generated-At: 2026-08-03T00:00:00Z
